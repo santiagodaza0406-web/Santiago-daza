@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f8fc">
+  <title>Mi Proyecto de Vida</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">MI CAMINO · MIS SUEÑOS · MI FUTURO</span>
+      <h1 id="titulo">MI PROYECTO DE VIDA</h1>
+      <p>Construyendo mis sueños, un paso a la vez</p>
+      <a class="hero-link" href="#inicio">Conocer mi proyecto <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+  </header>
+
+  <nav class="main-nav" aria-label="Navegación principal">
+    <a href="#inicio" data-page="inicio" class="activo" aria-current="page">Inicio</a>
+    <a href="#metas" data-page="metas">Mis metas</a>
+    <a href="#futuro" data-page="futuro">Mi futuro</a>
+  </nav>
+
+  <main id="contenido">
+    <section class="page active" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="intro-grid">
+        <div class="copy-card">
+          <span class="kicker">01 · SOBRE MÍ</span>
+          <h2 id="titulo-inicio">¿Quién soy?</h2>
+          <p>Soy una persona con sueños, metas y muchas ganas de salir adelante. Me considero alguien que quiere aprender, superarse y aprovechar las oportunidades que se presenten en mi vida.</p>
+          <h2>Mi propósito</h2>
+          <p>Mi propósito es convertirme en una persona exitosa, cumplir mis objetivos, ayudar a mi familia y construir un futuro lleno de oportunidades.</p>
+        </div>
+        <figure class="image-card photo-card">
+          <img src="./imagenes/foto-traje-azul.jpg" alt="Mi fotografía individual con traje azul" loading="lazy">
+          <figcaption>La constancia convierte los sueños en proyectos.</figcaption>
+        </figure>
+      </div>
+      <div class="values-card">
+        <div><span class="kicker">MIS PRINCIPIOS</span><h2>Los valores que me guían</h2></div>
+        <div class="chips"><span>Responsabilidad</span><span>Respeto</span><span>Honestidad</span><span>Perseverancia</span><span>Disciplina</span></div>
+      </div>
+    </section>
+
+    <section class="page" id="metas" aria-labelledby="titulo-metas" hidden>
+      <div class="section-heading"><span class="kicker">02 · PLAN DE ACCIÓN</span><h2 id="titulo-metas">Mis metas y objetivos</h2><p>Todo comienza con un sueño y se construye con acciones.</p></div>
+      <div class="goal-grid">
+        <article class="goal-card"><span class="number">01</span><h3>A corto plazo</h3><p>Terminar mis estudios, mejorar mis conocimientos, aprender cosas nuevas y prepararme para ingresar a la universidad.</p></article>
+        <article class="goal-card"><span class="number">02</span><h3>A mediano plazo</h3><p>Ingresar a la universidad y estudiar Ingeniería de Sistemas. También quiero aprender programación, desarrollar proyectos y adquirir experiencia.</p></article>
+        <article class="goal-card"><span class="number">03</span><h3>A largo plazo</h3><p>Graduarme como ingeniero de sistemas, conseguir un buen empleo, tener estabilidad económica y cumplir mis sueños.</p></article>
+      </div>
+      <div class="photo-gallery" aria-label="Imágenes que representan mis metas">
+        <figure><img src="./imagenes/foto-traje-azul.jpg" alt="Mi fotografía individual con traje azul" loading="lazy"><figcaption>Mi meta: llegar a la universidad</figcaption></figure>
+        <figure><img src="./imagenes/foto-amigos.jpg" alt="Fotografía con mi amigo en traje formal" loading="lazy"><figcaption>Mi camino en la programación</figcaption></figure>
+      </div>
+      <div class="feature-row">
+        <figure class="image-card photo-card"><img src="./imagenes/foto-traje-azul.jpg" alt="Mi fotografía individual con traje azul" loading="lazy"><figcaption>Aprender tecnología abre nuevas oportunidades.</figcaption></figure>
+        <div class="copy-card"><span class="kicker">MI MAYOR SUEÑO</span><h2>Convertir mi pasión en mi profesión</h2><p>Convertirme en un gran profesional y sentirme orgulloso de todo lo que he conseguido.</p></div>
+      </div>
+    </section>
+
+    <section class="page" id="futuro" aria-labelledby="titulo-futuro" hidden>
+      <div class="section-heading"><span class="kicker">03 · LO QUE QUIERO CONSTRUIR</span><h2 id="titulo-futuro">Mi futuro</h2><p>El futuro que quiero construir empieza con mis decisiones de hoy.</p></div>
+      <div class="future-grid">
+        <article class="future-card"><span class="icon">⌘</span><h3>Mi vida profesional</h3><p>Quiero estudiar Ingeniería de Sistemas, convertirme en un profesional y trabajar en el mundo de la tecnología y la programación.</p></article>
+        <article class="future-card"><span class="icon">♡</span><h3>Mi vida personal</h3><p>Deseo tener una vida tranquila, apoyar a mi familia, conocer nuevos lugares y compartir momentos especiales con las personas que quiero.</p></article>
+        <article class="future-card"><span class="icon">↗</span><h3>¿Cómo lo voy a lograr?</h3><p>Con esfuerzo, disciplina, dedicación, responsabilidad y nunca dejando de aprender. Sé que habrá dificultades, pero trabajaré para superar cada obstáculo.</p></article>
+      </div>
+      <div class="feature-row future-feature">
+        <figure class="image-card photo-card"><img src="./imagenes/foto-amigos.jpg" alt="Fotografía con mi amigo en traje formal" loading="lazy"><figcaption>Mi meta es graduarme y ejercer mi profesión.</figcaption></figure>
+        <div class="quote-card"><span class="kicker">MI FRASE FAVORITA</span><blockquote>“No importa qué tan lento avances, lo importante es nunca dejar de avanzar”.</blockquote><p>Mi futuro depende de las decisiones que tome hoy.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Mi Proyecto de Vida · 2026</p><span>Hecho con sueños y determinación.</span><small class="photo-credit">Fotografías personales</small></footer>
+  <script src="./script.js"></script>
+</body>
+</html>

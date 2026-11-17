@@ -1,0 +1,62 @@
+*{box-sizing:border-box}
+:root{--bg:#fbf7ff;--paper:#fff;--ink:#292044;--muted:#675d7d;--blue:#8650c9;--blue-dark:#48227d;--lav:#f0e5ff;--mint:#e4f8f1;--line:#e6d8fa;--shadow:0 16px 45px rgba(88,43,145,.13)}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.7}
+.hero{position:relative;overflow:hidden;min-height:290px;display:grid;place-items:center;text-align:center;padding:55px 20px;background:linear-gradient(110deg,rgba(42,15,87,.88),rgba(102,48,171,.65)),url("./imagenes/foto-amigos.jpg") center 42%/cover;color:#fff}
+.hero-inner{position:relative;z-index:1;max-width:760px}
+.eyebrow,.kicker{font-size:.75rem;font-weight:800;letter-spacing:.15em}
+.eyebrow{color:#dbe6fa}
+.hero h1{margin:10px 0 4px;font-size:clamp(2rem,5vw,3.3rem);line-height:1.15;letter-spacing:.025em;animation:enter .65s ease both}
+.hero p{margin:0 0 22px;color:#eaf0fb;font-size:1.08rem}
+.hero-link{display:inline-flex;gap:12px;align-items:center;padding:9px 18px;border:1px solid #ffffff70;border-radius:30px;color:white;text-decoration:none;font-weight:700;transition:.2s}
+.hero-link:hover{background:#ffffff20;transform:translateY(-2px)}
+.hero-orb{position:absolute;border-radius:50%;background:#ffffff12}
+.orb-one{width:240px;height:240px;left:-70px;top:-90px}.orb-two{width:330px;height:330px;right:-120px;bottom:-210px}
+.main-nav{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:9px;flex-wrap:wrap;padding:12px 16px;background:#fff8ffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.main-nav a{padding:8px 18px;border-radius:24px;color:var(--blue-dark);font-weight:750;text-decoration:none;transition:background .2s,color .2s}
+.main-nav a:hover,.main-nav a.activo{background:linear-gradient(135deg,#6e2bb8,#a35be0);color:white;box-shadow:0 7px 18px #783bb533}
+main{max-width:1080px;min-height:450px;margin:36px auto 54px;padding:0 22px}
+.page{animation:pageIn .38s ease both}
+.page[hidden]{display:none!important}
+.intro-grid,.feature-row{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch}
+.copy-card,.image-card,.values-card,.goal-card,.future-card,.quote-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+.copy-card{padding:clamp(23px,4vw,38px)}
+.kicker{color:var(--blue);display:block;margin-bottom:8px}
+h2{font-size:clamp(1.45rem,3vw,2rem);line-height:1.25;margin:0 0 12px;color:var(--blue-dark)}
+.copy-card h2:not(:first-of-type){margin-top:26px}
+p{color:var(--muted);margin:0 0 14px}
+.image-card{margin:0;padding:12px;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.image-card img{width:100%;height:100%;min-height:230px;max-height:360px;object-fit:cover;display:block;border-radius:14px}.photo-card{padding:10px;background:linear-gradient(135deg,#f4e9ff,#e5f7ff)}
+.image-card figcaption{font-size:.86rem;color:var(--muted);padding:10px 8px 2px}
+.values-card{margin-top:22px;padding:25px 30px;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.values-card h2{margin:0}
+.chips{display:flex;gap:9px;flex-wrap:wrap}
+.chips span{padding:8px 13px;background:linear-gradient(135deg,#f2e5ff,#e5f8f3);border:1px solid #e8d7fa;border-radius:20px;color:#61329a;font-weight:700;font-size:.9rem}
+.section-heading{text-align:center;margin:0 auto 28px;max-width:650px}
+.section-heading h2{font-size:clamp(1.8rem,4vw,2.5rem)}
+.goal-grid,.future-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.goal-card,.future-card{padding:25px}
+.number{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,#8d4bd0,#d16fc4);color:white;font-weight:850;margin-bottom:16px}
+h3{margin:0 0 10px;color:var(--blue-dark);font-size:1.2rem}
+.feature-row{margin-top:22px}
+.feature-row .image-card{background:#f0f3fc}
+.feature-row .copy-card{display:flex;flex-direction:column;justify-content:center}
+.future-card .icon{display:grid;place-items:center;width:42px;height:42px;margin-bottom:14px;border-radius:14px;background:var(--mint);font-size:1.5rem;color:#477b67}
+.quote-card{padding:clamp(24px,4vw,38px);display:flex;flex-direction:column;justify-content:center;background:#f0f3fc}
+blockquote{margin:4px 0 18px;font-size:clamp(1.3rem,2.7vw,1.8rem);font-weight:750;line-height:1.4;color:var(--blue-dark)}
+footer{text-align:center;padding:25px 16px;background:linear-gradient(110deg,#29104f,#59258b,#8c45b8);color:white}
+footer p{margin:0;color:#f1f4fb;font-weight:700}footer span{font-size:.85rem;color:#cbd6e8}
+@keyframes enter{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pageIn{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){main{margin:23px auto 38px;padding:0 14px}.intro-grid,.feature-row{grid-template-columns:1fr}.goal-grid,.future-grid{grid-template-columns:1fr}.values-card{padding:22px}.hero{min-height:260px}.main-nav{gap:4px}.main-nav a{padding:8px 13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0}
+.photo-gallery figure{margin:0;padding:10px;background:white;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.photo-gallery img{display:block;width:100%;height:220px;object-fit:cover;border-radius:13px}
+.photo-gallery figcaption{padding:9px 5px 2px;color:var(--blue-dark);font-weight:750;text-align:center}
+.photo-credit{display:block;margin-top:8px;color:#e3d4f6;font-size:.72rem}
+.goal-card{background:linear-gradient(150deg,#fff 0%,#f8f0ff 100%)}
+.future-card:nth-child(2){background:linear-gradient(150deg,#fff,#effbf7)}
+.future-card:nth-child(3){background:linear-gradient(150deg,#fff,#fff3e9)}
+@media(max-width:760px){.photo-gallery{grid-template-columns:1fr}.photo-gallery img{height:210px}.image-card img{min-height:190px}}

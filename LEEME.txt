@@ -1,0 +1,16 @@
+MI PROYECTO DE VIDA - VERSIÓN CON FOTOGRAFÍAS
+
+1. Extrae todo el ZIP en una sola carpeta.
+2. Abre index.html con Chrome, Edge o Firefox.
+3. Usa el menú Inicio / Mis metas / Mi futuro para navegar.
+
+Se añadieron fotografías reales de bibliotecas, programación y graduación.
+Las fotografías se cargan desde sus páginas de origen, por lo que necesitas
+conexión a internet para verlas. La navegación del sitio funciona localmente.
+
+Fuentes de las fotografías:
+- TU Berlin: https://www.tu.berlin/wm
+- Forbes: https://www.forbes.com/councils/forbesbusinesscouncil/2022/01/05/will-no-code-development-put-software-engineers-out-of-work/
+- UC Davis: https://mae.ucdavis.edu/news/daniela-barajas-ivey-chemical-engineer-aerospace
+- Campos Salles: https://cs.edu.br/
+- Hyperight: https://hyperight.com/why-the-future-of-the-enterprise-ai-are-the-foundation-models/
